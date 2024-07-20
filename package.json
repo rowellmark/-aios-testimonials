@@ -37,6 +37,6 @@
 	},
 	"dependencies": {
 		"lodash": "^4.17.20",
-		"webpack-fix-style-only-entries": "^0.5.1"
+		"webpack-fix-style-only-entries": "^0.6.1"
 	}
 }
