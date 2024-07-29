@@ -71,7 +71,8 @@
 
                     <?php
                         $post_id        = get_the_ID();
-                        $popup_id       = 'ai-minimalist-testimonials-results-popup-'.$post_id.'';
+                        $popup_id       = 'ai-minimalist-testimonials-results-popup-' . $post_id . '';
+                        $popup_id       = sanitize_text_field($popup_id);
                         $content_count  = $counter == 0 ? '400' : '244';
                         $aios_testimonials_role         = get_post_meta( $post_id, 'aios_testimonials_role', true );
                         $aios_testimonials_image            = get_post_meta( $post_id, 'aios_testimonials_image', true );
